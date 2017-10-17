@@ -1,0 +1,65 @@
+.header {
+	background: indigo;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	height: 100px;
+	margin: 0 auto;
+	
+	line-height	: 100px;
+	color: blue;
+	text-align: center;
+	font-size: 40px; 
+	line-height	: 100px;
+}
+
+#footer {
+	height: 100px;
+	line-height	: 100px;
+	background: #2F4F4F;
+	position: relative;
+}
+#footer-copyrite {
+	float: right;
+	margin-right: 30px;
+	font-size: 15px;
+	text-align: right;
+	color: #dbdbdb;
+}
+p {
+	margin: 0;
+}
+
+
+aside {
+	float: left;
+	width: 250px;
+	height: 250px;
+	border: 2px solid gray;
+	margin-top: 20px;
+}
+aside li {
+	font-weight: 30px;
+	list-style-type: square;
+	text-align: left;
+	line-height: 40px;
+}
+aside a {
+	color: blue;
+}
+
+.container {
+	width: 300px;
+	height: 400px;
+	overflow: hidden;
+	position: relative;	
+}
+.photo {
+	max-width: none;
+	min-width: auto;
+	min-height: auto;
+	height: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
