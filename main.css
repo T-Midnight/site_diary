@@ -33,7 +33,7 @@ p {
 aside {
 	float: left;
 	width: 250px;
-	height: 250px;
+	height: 277px;
 	border: 2px solid gray;
 	margin-top: 20px;
 }
@@ -44,22 +44,27 @@ aside li {
 	line-height: 40px;
 }
 aside a {
-	color: blue;
-}
-
-.container {
-	width: 300px;
-	height: 400px;
-	overflow: hidden;
-	position: relative;	
+	color: indigo;
 }
 .photo {
-	max-width: none;
-	min-width: auto;
-	min-height: auto;
-	height: 100%;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	margin-top: 20px;
+	width: 100%;
+	margin-bottom: 50px;
+	margin-left: 50px;
+	
+}
+body {
+	min-width: 900px;
+	height:100%;
+	min-height: 600px;
+	background-image: url(background.jpg);
+}
+.spisok {
+	font-size: 10px;
+	color: steelblue;
+	line-height: 10px;
+}
+.col-sm-3 {
+	padding: 30px 0px;
+	
 }

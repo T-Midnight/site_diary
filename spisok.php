@@ -6,7 +6,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script> 
     <title>Электронный дневник школьника</title>
   </head>
-  <body>
+  <body background="background.jpg">
     <div class="container-fluid header">
 		<p> Электронный дневник школьника </p>
     </div>
@@ -20,13 +20,17 @@
 					<li><a href="/etiam/">Домашнее задание</a></li>
 				</ul>
 			</aside>
-			<div class="photo col-sm-4">
-				<img src="Maria.jpg" alt="Мария Михайлова">
-			</div>
-			<div class="col-sm-4">
-				<h2><span style="color: indigo;">Михайлова Мария </span></h2> <br>
-				<h4><span style="color: indigo;">Ученица 5 класса Б многопрофильного лицея № 2456 в г. Москва, Россия </span></h4>
-			</div>
+			<div class="spisok col-sm-8">
+				<p> Иванов Сергей, телефон: 89604579083 </p> <br> <hr>
+				<p> Иванов Сергей, телефон: 89604579083 </p> <br> <hr>
+				<p> Иванов Сергей, телефон: 89604579083 </p> <br> <hr>
+				<p> Иванов Сергей, телефон: 89604579083 </p> <br> <hr>
+				<p> Иванов Сергей, телефон: 89604579083 </p> <br> <hr>		
+				<p> Иванов Сергей, телефон: 89604579083 </p> <br> <hr>
+				<p> Иванов Сергей, телефон: 89604579083 </p> <br> <hr>
+				<p> Иванов Сергей, телефон: 89604579083 </p> <br> <hr>
+				<p> Иванов Сергей, телефон: 89604579083 </p> <br> <hr>
+			</div>	
 		</div>
 	</div>
 	<footer>
