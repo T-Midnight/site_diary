@@ -1,6 +1,7 @@
 <html>
   <head>
     <link rel = "stylesheet" type= "text/css"  href = "main.css"/>
+	<link rel="stylesheet" type= "text/css" href="craftyslide.css" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css"> 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script> 
@@ -41,15 +42,33 @@
 		<div class="row">
 			<div class="col-sm-6 col-sm-offset-5 col-md-6 col-md-offset-5">
 				<h2>Достижения</h2>
+				<div id="slideshow">
+					<ul>
+						<li><img title="Flower and Bee" src="images/image_1.jpg" alt="Flower and Bee" /></li>
+						<li><img title="Flower" src="images/image_2.jpg" alt="Flower" /></li>
+						<li><img title="Leaf" src="images/image_3.jpg" alt="Leaf" /></li>
+					</ul>
+				</div>
+				<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+				<script src="js/craftyslide.min.js"></script>
+				<script type="text/javascript">
+					$("#slideshow").craftyslide({
+						'width': 640,
+						'height': 300,
+						'pagination': true,
+						'fadetime': 500,
+						'delay': 500
+					});
+				</script>
 			</div>
 
 		</div>
 	</div>
     <footer>
 		<div id="footer" class="footer container-fluid">
-		<div id="footer-copyrite">
-			<p>Copyright © 2017 Белоусова Татьяна ПИбд-31</p> 
-		</div>
+			<div id="footer-copyrite">
+				<p>Copyright © 2017 Белоусова Татьяна ПИбд-31</p> 
+			</div>
 		</div>
 	</footer>
   </body>
