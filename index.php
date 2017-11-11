@@ -5,27 +5,47 @@
     <title>Электронный дневник школьника</title>
   </head>
   <body>
-    <div class="container-fluid header">
-		<p> Электронный дневник школьника </p>
+	<div class="container-fluid header">
+		<p> <a href="index.php">Электронный дневник школьника</a></p>
     </div>
-	<aside>
-
-			<ul>
-				<li><a href="/donec/">Личные данные</a></li>
-				<li><a href="/donec/">Список группы</a></li>
-				<li><a href="/vestibulum/">Оценки</a></li>
-				<li><a href="/etiam/">Домашнее задание</a></li>
-			</ul>
-	</aside>
 	<div class="container">
-		<div class="photo">
-			<img src="Petr.jpg" alt="Пётр Михайлов">
+		<div class="col-sm-2">
+			<nav class="nav-sidebar">
+				<ul class="nav tabs">
+					<li class="active"><a href="index.php">Личные данные</a></li>
+					<li class=""><a href="spisok.php">Список группы</a></li>
+					<li class=""><a href="#tab3" data-toggle="tab">Оценки</a></li>                 
+					<li class=""><a href="#tab3" data-toggle="tab">Домашнее задание</a></li>   		  
+				</ul>
+			</nav>
 		</div>
-		<h2>Михайлов Пётр </h2> <br>
-		<h4>Ученик 5 класса Б многопрофильного лицея № 2456 в г. Москва, Россия </h4>
+		<!-- tab content -->
+		<div class="tab-content">
+			<div class=" active">
+				<div class="col-xs-12 col-md-4 col-sm-6">
+					<img src="Maria.jpg" class="img-rounded img-responsive"> 
+				</div>
+				<div class=" text-style">
+					<h2>Михайлова Мария</h2>
+					<p>
+						Ученица 5-го класса Б школы № 67 в городе Ульяновске. Мария - удивительно талантливая девочка, 
+						проявляет активную жизненную позицию. Круглая отличница.
+					</p>
+				</div>
+			</div>
+			
+		</div>
 	</div>
-	<footer>
-		<div id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 col-sm-offset-5 col-md-6 col-md-offset-5">
+				<h2>Достижения</h2>
+			</div>
+
+		</div>
+	</div>
+    <footer>
+		<div id="footer" class="footer container-fluid">
 		<div id="footer-copyrite">
 			<p>Copyright © 2017 Белоусова Татьяна ПИбд-31</p> 
 		</div>
@@ -33,4 +53,4 @@
 	</footer>
   </body>
 </html>
-
+    
