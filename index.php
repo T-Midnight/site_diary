@@ -5,6 +5,9 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css"> 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script> 
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+	<script src="js/craftyslide.min.js"></script>
+	
     <title>Электронный дневник школьника</title>
   </head>
   <body>
@@ -26,7 +29,7 @@
 		<div class="tab-content">
 			<div class=" active">
 				<div class="col-xs-12 col-md-4 col-sm-6">
-					<img src="Maria.jpg" class="img-rounded img-responsive"> 
+					<img src="Maria.jpg" class="img-rounded img-responsive photo"> 
 				</div>
 				<div class=" text-style">
 					<h2>Михайлова Мария</h2>
@@ -40,28 +43,29 @@
 	</div>
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-6 col-sm-offset-5 col-md-6 col-md-offset-5">
+			<div class="col-sm-4 col-sm-offset-7 col-md-4 col-md-offset-7 achievements">
 				<h2>Достижения</h2>
 				<div id="slideshow">
 					<ul>
-						<li><img title="Flower and Bee" src="images/image_1.jpg" alt="Flower and Bee" /></li>
-						<li><img title="Flower" src="images/image_2.jpg" alt="Flower" /></li>
-						<li><img title="Leaf" src="images/image_3.jpg" alt="Leaf" /></li>
+						<li><img title="Благодарственное письмо от директора школы" src="images/благодарность.jpg" alt="Благодарственное письмо" /></li>
+						<li><img title="Грамота за первое место в конкурсе вышивок крестиком" src="images/грамота.jpg" alt="Грамота" /></li>
+						<li><img title="Диплом международных соревнований по теннису" src="images/диплом.jpg" alt="Диплом" /></li>
 					</ul>
 				</div>
-				<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
-				<script src="js/craftyslide.min.js"></script>
 				<script type="text/javascript">
 					$("#slideshow").craftyslide({
-						'width': 640,
+						'width': 200,
 						'height': 300,
 						'pagination': true,
 						'fadetime': 500,
-						'delay': 500
+						'delay': 100
 					});
 				</script>
-			</div>
+				<script>
+					jQuery.noConflict();
+				</script>
 
+			</div>
 		</div>
 	</div>
     <footer>

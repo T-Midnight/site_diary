@@ -5,10 +5,10 @@ Craftyslide CSS Styles
 */
 
 #slideshow {
-	margin:0;
+	margin-left:50px;
 	padding:0;
 	position:relative;
-	border:15px solid #f8f8f8;
+	border:5px solid #f8f8f8;
 	-webkit-box-shadow:0 3px 5px #999;
 	-moz-box-shadow:0 3px 5px #999;
 	box-shadow:0 3px 5px #999;
@@ -67,4 +67,34 @@ Craftyslide CSS Styles
 	color:#fff;
 	border-top:1px solid #000;
 	background:rgba(0,0,0,0.6);
+}
+@media all and (max-width: 768px){
+	#slideshow {
+		margin-left:10px;
+	}
+}
+@media all and (min-width: 450px){
+	#slideshow {
+		margin-left:80px;
+	}
+}
+@media all and (min-width: 590px){
+	#slideshow {
+		margin-left:170px;
+	}
+}
+@media all and (min-width: 769px){
+	#slideshow {
+		margin-left:5px;
+	}
+}
+@media all and (min-width: 993px){
+	#slideshow {
+		margin-left:40px;
+	}
+}
+@media all and (min-width: 1199px){
+	#slideshow {
+		margin-left:70px;
+	}
 }

@@ -1,12 +1,3 @@
-/*
-* Craftyslide
-* Created by: Abid Din - http://craftedpixelz.co.uk
-* Version: 1.0
-* Copyright: Crafted Pixelz
-* License: MIT license
-* Updated: 7th June 2011
-*/
-
 (function ($) {
     $.fn.craftyslide = function (options) {
 
@@ -15,7 +6,7 @@
             "width": 600,
             "height": 300,
             "pagination": true,
-            "fadetime": 350,
+            "fadetime": 10,
             "delay": 5000
         };
 
