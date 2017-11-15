@@ -2,6 +2,24 @@ body {
 	background-image: url("fon.png");
 	min-width: 200px;
 }
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.page-wrapper {
+    min-height: 100%;
+    margin-bottom: -50px;
+}
+* html .page-wrapper {
+    height: 100%;
+}
+
+.page-buffer {
+    height: 50px;
+} 
+
 .blogShort{ 
 	border-bottom:1px solid #ddd;
 }
@@ -70,15 +88,10 @@ h2{
 }
 
 
-.slide {
-	
-}
-
-
 
 .achievements {
 	color: green;
-	background: gray;
+	background: light-blue;
 	text-align: center !important;
 	margin-bottom: 40px;
 	padding-bottom: 10px;

@@ -1,0 +1,17 @@
+.task {
+	background: #F4A460;
+	box-shadow: 0 8px 5px 0 #585858;
+	line-height: 20px;
+	padding: 15px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	font-size: 19px;
+}
+textarea {
+	width:400px;
+	height:200px;
+    resize: none;
+   } 
+.answer {
+	margin-top: 20px;
+}
