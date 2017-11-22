@@ -8,6 +8,9 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
 	
     <title>Электронный дневник школьника</title>
+	<style>
+		.error {color: #FF0000;}
+	</style>
   </head>
   <body>
 	<div class="container-fluid header">
@@ -44,8 +47,9 @@
 				</div>
 				<div class=" answer">
 					<form name="task" id="task" method="post">
-						<p><b>Фамилия, имя, класс:</b><br>
-						<input type="text" name="name"  size="50">
+						<p><b>Фамилия:</b><br>
+						<input type="text" name="name" size="50">
+						
 						<p><b>Решение задач:</b> <Br>
 							<textarea name="text">
 							</textarea>
@@ -56,16 +60,38 @@
 					# Если кнопка нажата
 						if( isset( $_POST['nazvanie_knopki'] ) )
 						{
-							$fp = fopen("work.txt", "w"); // 
-							fputs($fp, $_POST['name']);
-							fputs($fp, "\r\n");
-							fputs($fp, $_POST['text']);
-							if (filesize("work.txt")!= 0) {
-								echo 'Домашнее задание отправлено на проверку';
+							$nameErr = "";
+							$name = "";
+							
+							function test_input($data) {
+								$data = trim($data);
+								$data = stripslashes($data);
+								$data = htmlspecialchars($data);
+								return $data;
 							}
-							else echo 'Ошибка при записи в файл.';
-							fclose($fp); //Закрытие файла
-						}
+							
+							if (empty($_POST["name"])) {
+								$nameErr = "Поле Фамилия не должно быть пустым";
+								echo $nameErr;
+							} else {
+								$name = test_input($_POST["name"]);
+								// check if name only contains letters and whitespace
+								if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
+								  $nameErr = "В поле Фамилия возможно вводить только буквы и пробелы"; 
+								  echo $nameErr;
+								} else {
+									$fp = fopen("work.txt", "w"); // 
+									fputs($fp, $_POST['name']);
+									fputs($fp, "\r\n");
+									fputs($fp, $_POST['text']);
+									if (filesize("work.txt")!= 0) {
+										echo 'Домашнее задание отправлено на проверку';
+									}
+									else echo 'Ошибка при записи в файл.';
+									fclose($fp); //Закрытие файла
+								}
+							}
+						}	
 					?>
 				</div>
 			</div>

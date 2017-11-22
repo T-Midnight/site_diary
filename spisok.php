@@ -61,10 +61,10 @@
 					<form name="query" id="query" method="post">
 						<p><b>Введите год рождения ученика (от 1994 до 1997)</b><br>
 						<input type="text" name="year"  size="4">
-						<p><b>Введите год рождения ученика (от 1994 до 1997)</b><br>
-						<p><input name="dzen" type="radio" value="nedzen"> Все</p>
-						<p><input name="dzen" type="radio" value="nedzen"> Мальчики</p>
-						<p><input name="dzen" type="radio" value="nedzen"> Девочки</p>
+						<p><b>Выберите пол</b><br>
+						<p><input name="dzen" type="radio" value="all" checked> Все</p>
+						<p><input name="dzen" type="radio" value="boys"> Мальчики</p>
+						<p><input name="dzen" type="radio" value="girls"> Девочки</p>
 						<input type="submit"  name="nazvanie_knopki" value="Показать выбранных">
 					</form>
 					<?php
