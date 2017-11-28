@@ -148,7 +148,9 @@ h2{
 }
 
 
-
+nav select {
+  display: none;
+}
 
 
 
@@ -162,5 +164,8 @@ h2{
 }
 
 
-
+@media all and (max-width: 769px) {
+  nav ul     { display: none; }
+  nav select { display: inline-block; }
+}
 

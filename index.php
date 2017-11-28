@@ -8,6 +8,7 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
 	<script src="js/craftyslide.min.js"></script>
 	<script src="js/arrow.js"></script>
+	<script src="js/menu.js"></script>
 	
     <title>Электронный дневник школьника</title>
   </head>
