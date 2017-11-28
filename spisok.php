@@ -5,6 +5,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css"> 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script> 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+	<script type="text/javascript" src="//web-ptica.ru/VRV-files/jquery-2.1.3.min.js "></script>
+	<script src="js/arrow.js"></script> 
 	
     <title>Электронный дневник школьника</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8_general_ci">
@@ -20,8 +22,7 @@
 				<nav class="nav-sidebar">
 					<ul class="nav tabs">
 						<li class=""><a href="index.php">Личные данные</a></li>
-						<li class="active"><a href="spisok.php">Список группы</a></li>
-						<li class=""><a href="#tab3" data-toggle="tab">Оценки</a></li>                 
+						<li class="active"><a href="spisok.php">Список группы</a></li>           
 						<li class=""><a href="tasks.php">Домашнее задание</a></li>   		  
 					</ul>
 				</nav>
@@ -102,6 +103,7 @@
 			</div>
 		</div>
 	</div>
+	<a href="#" class="scrollup">Наверх</a>
 	 <footer  class="page-footer">
 		<div id="footer" class="footer container-fluid">
 			<div id="footer-copyrite">
