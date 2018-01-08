@@ -1,0 +1,171 @@
+body {
+	background: url(../images/fon.png);
+	min-width: 200px;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.page-wrapper {
+    min-height: 100%;
+    margin-bottom: -50px;
+}
+* html .page-wrapper {
+    height: 100%;
+}
+
+.page-buffer {
+    height: 50px;
+} 
+
+.blogShort{ 
+	border-bottom:1px solid #ddd;
+}
+.nav-sidebar { 
+    width: 100%;
+    padding: 30px 0; 
+    border-right: 1px solid #ddd;
+}
+.nav-sidebar a {
+    color: #333;
+    -webkit-transition: all 0.08s linear;
+    -moz-transition: all 0.08s linear;
+    -o-transition: all 0.08s linear;
+    transition: all 0.08s linear;
+}
+.nav-sidebar .active a { 
+    cursor: default;
+    background-color: #0b56a8; 
+    color: #fff; 
+}
+.nav-sidebar .active a:hover {
+    background-color: #E50000;   
+}
+.nav-sidebar .text-overflow a,
+.nav-sidebar .text-overflow .media-body {
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis; 
+}
+
+.btn-blog {
+    color: #ffffff;
+    background-color: #E50000;
+    border-color: #E50000;
+    border-radius:0;
+    margin-bottom:10px
+}
+.btn-blog:hover,
+.btn-blog:focus,
+.btn-blog:active,
+.btn-blog.active,
+.open .dropdown-toggle.btn-blog {
+    color: white;
+    background-color:#0b56a8;
+    border-color: #0b56a8;
+}
+article h2{
+	color:#333333;
+}
+h2{
+	color:#0b56a8;
+	text-align: center;
+}
+ .margin10{
+	margin-bottom:10px; 
+	margin-right:10px;
+}
+ 
+ .container .text-style
+{
+	text-align: justify;
+	line-height: 23px;
+	margin: 0 13px 0 0;
+	font-size: 19px;
+}
+
+
+
+.achievements {
+	color: green;
+	background: light-blue;
+	text-align: center !important;
+	margin-bottom: 40px;
+	padding-bottom: 10px;
+	margin-left: 30px;
+}
+
+
+
+
+
+
+
+
+
+.header {
+	background: indigo;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin: 0 auto;
+	
+	line-height	: 80px;
+	text-align: center;
+	font-size: 40px; 
+	box-shadow: 0 8px 10px 0 #585858;
+}
+.header a {
+	color: white;
+}
+
+#footer {
+	background: indigo;
+	height: 80px;
+}
+#footer-copyrite {
+	float: right;
+	margin-right: 30px;
+	margin-top: 30px;
+	font-size: 15px;
+	text-align: right;
+	color: #dbdbdb;
+	background: indigo;
+}
+
+.scrollup{
+    width:40px;
+    height:40px;
+    opacity:0.3;
+    position:fixed;
+    bottom:50px;
+    right:30px;
+    display:none;
+    text-indent:-9999px;
+    background: url(../images/arrow.png) no-repeat;
+}
+
+
+nav select {
+  display: none;
+}
+
+
+
+.spisok {
+	padding: 20px;
+	margin-bottom:50px;
+}
+
+.table {
+	background-color: green;
+}
+
+
+@media all and (max-width: 769px) {
+  nav ul     { display: none; }
+  nav select { display: inline-block; }
+}
+
